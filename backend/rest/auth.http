@@ -1,0 +1,24 @@
+POST http://localhost:5000/auth/register HTTP/1.1
+content-type: application/json
+
+{
+    "name": "amit",
+    "email": "amit.moota@gmail.com",
+    "password": "123456789"
+}
+
+###
+POST http://localhost:5000/auth/login HTTP/1.1
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiYTdlNTA0MTMtNDE5NS00MmFhLWI5ZjMtYTgwNzlhOTQwYjExIiwiaWF0IjoxNjE4OTA2ODUyLCJleHAiOjE2MTg5MTA0NTJ9.G7ufjZxS1y8nzEGqpZ1OPHqAyFa5k-nVSIvfJMlA_Uk
+
+{
+    "email": "amit.moota@gmail.com",
+    "password": "123456789",
+}
+
+###
+GET http://localhost:5000/dashboard HTTP/1.1
+content-type: application/json
+Authorization: Bearer 
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiYTdlNTA0MTMtNDE5NS00MmFhLWI5ZjMtYTgwNzlhOTQwYjExIiwiaWF0IjoxNjE4OTA2ODUyLCJleHAiOjE2MTg5MTA0NTJ9.G7ufjZxS1y8nzEGqpZ1OPHqAyFa5k-nVSIvfJMlA_Uk
